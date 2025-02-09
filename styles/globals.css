@@ -2,6 +2,37 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 整體捲軸樣式 */
+::-webkit-scrollbar {
+  width: 10px;  /* 捲軸寬度 */
+}
+
+/* 捲軸軌道 */
+
+
+/* 捲軸滑塊 */
+::-webkit-scrollbar-thumb {
+  background: #888;  /* 滑塊顏色 */
+  border-radius: 10px;  /* 圓角 */
+}
+
+/* 滑鼠懸停時的滑塊樣式 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;  /* 懸停時的顏色 */
+}
+
+/* Firefox 瀏覽器的捲軸樣式 */
+* {
+  scrollbar-width: thin;  /* 捲軸寬度: thin, auto */
+  scrollbar-color: #888 #f1f1f1;  /* 滑塊顏色 軌道顏色 */
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
